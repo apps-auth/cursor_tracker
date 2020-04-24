@@ -13,7 +13,7 @@ class CursorTracker extends MouseRegion {
     String cursorStyle = 'pointer',
     Function() onHover,
     Function() onExit,
-    Function(PointerHoverEvent evt) onEnter,
+    Function(PointerEnterEvent evt) onEnter,
   }) : super(
             onHover: (PointerHoverEvent evt) {
               if (kIsWeb) {
