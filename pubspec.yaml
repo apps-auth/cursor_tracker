@@ -1,7 +1,6 @@
 name: cursor_tracker
 description: Custom Cursor to Flutter Web
 version: 0.0.1
-author:
 homepage: https://github.com/apps-auth/cursor_tracker
 
 environment:
