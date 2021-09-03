@@ -9,15 +9,15 @@ class CursorTracker extends MouseRegion {
   // cursor types from http://www.javascripter.net/faq/stylesc.htm
 
   CursorTracker({
-    Widget child,
+    Widget? child,
     String cursorStyle = 'pointer',
-    Function() onHover,
-    Function() onExit,
-    Function(PointerEnterEvent evt) onEnter,
+    Function()? onHover,
+    Function()? onExit,
+    Function(PointerEnterEvent evt)? onEnter,
   }) : super(
             onHover: (PointerHoverEvent evt) {
               if (kIsWeb) {
-                appContainer.style.cursor = cursorStyle;
+                appContainer!.style.cursor = cursorStyle;
               }
               if (onHover != null) {
                 onHover();
@@ -25,7 +25,7 @@ class CursorTracker extends MouseRegion {
             },
             onExit: (PointerExitEvent evt) {
               if (kIsWeb) {
-                appContainer.style.cursor = 'default';
+                appContainer!.style.cursor = 'default';
               }
               if (onExit != null) {
                 onExit();

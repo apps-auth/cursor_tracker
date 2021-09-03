@@ -1,13 +1,13 @@
 name: cursor_tracker
 description: Custom Cursor to Flutter Web
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/apps-auth/cursor_tracker
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  universal_html: ">=1.2.2 <2.0.0"
+  universal_html: ">=2.0.8 <3.0.0"
   flutter:
     sdk: flutter
 
